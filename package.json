@@ -210,7 +210,7 @@
   "scripts": {
     "start": "node app5.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "nodemon app5.js"
+    "serve": "node app5.js"
   },
   "author": "",
   "license": "ISC",
