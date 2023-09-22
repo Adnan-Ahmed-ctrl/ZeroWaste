@@ -1,0 +1,13 @@
+body{
+    background-image: linear-gradient( to right,rgba(0,0,0,0.6),rgba(0,0,0,0)),
+    url(img/blured-2.png);
+    /* height: 70vh; */
+    background-size: cover;
+    background-position: center center;
+    /* position: relative; */
+}
+
+.hidden{
+    visibility: hidden;
+}
+

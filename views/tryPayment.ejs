@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+  <style>
+    img.i {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body class="bg-dark">
+  
+    
+<div class="container">
+
+  <div class="modal fade popup " id="myModal" role="dialog" data-toggle="popup" data-target="#myModal">
+    <div class="modal-dialog bg-warning">
+    
+      <!-- Modal content-->
+      <div class="modal-content ">
+        <div class="modal-header bg-warning rounded-0">
+          <h4 class="modal-title">Over amount</h4>
+          <a href="/display" type="button" class="btn btn-danger rounded-0 close" onclick="closed()" data-dismiss="modal">&times;</a>
+        </div>
+        <div class="modal-body bg-warning ">
+          <p>
+            You have enter greater than our supply
+          </p>
+        </div>
+        <div class="modal-footer bg-dark rounded-0">
+          <a href="/display" type="button" class="btn btn-outline-primary rounded-0 close" onclick="closed()" data-dismiss="modal">Retry</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+  
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+          document.getElementById('navbar_top').classList.add('fixed-top');
+          // add padding top to show content behind navbar
+          navbar_height = document.querySelector('.navbar').offsetHeight;
+          document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+          document.getElementById('navbar_top').classList.remove('fixed-top');
+          // remove padding top from body
+          document.body.style.paddingTop = '0';
+        }
+      });
+    });
+
+  </script>
+
+  <script type="text/javascript">
+    $(window).on('load', function() {
+        $('#myModal').modal('show');
+        // $("#myModal").modal("hide"); 
+    });
+    function closed(){
+          const popup = document.querySelector('.popup');
+          if (popup.classList.contains("modal")){
+            $("#myModal").modal("hide"); 
+          }
+        }
+</script>
+
+</body>
+
+</html>  

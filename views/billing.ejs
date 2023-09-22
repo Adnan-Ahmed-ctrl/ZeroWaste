@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>billing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> -->
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+</head>
+<body>
+
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+    </header>
+
+<main class="container-fluid bg-light">
+    <div class="container py-5 bg-light">
+        <form action="/billing" method="post">
+        <div class="row" style="justify-content: center;">
+          <div class="col-md-6 order-md-1">
+            <h4 class="mb-3">Change billing system</h4> 
+              <div class="row">
+                <div class="mb-3 col-sm-6">
+                  <label for="Kebele1">Kebele 1</label>
+                    <input type="number" class="form-control rounded-0" id="Kebele1"  name="Kebele" placeholder="birr" min="1">
+                </div>
+      
+                <div class="mb-3 col-sm-6">
+                  <label for="KebeleTwo">Kebele 2</label>
+                    <input type="number" class="form-control rounded-0" id="Kebele2"  name="Kebele" placeholder="birr" min="1">
+                </div>
+      
+                <div class="mb-3 col-sm-6">
+                  <label for="Kebele">Kebele 3</label>
+                    <input type="number" class="form-control rounded-0" id="Kebele3"  name="Kebele" placeholder="birr" min="1">
+                </div>
+      
+                <div class="mb-3 col-sm-6">
+                  <label for="Kebele">Kebele 4</label>
+                    <input type="number" class="form-control rounded-0" id="Kebele4"  name="Kebele" placeholder="birr" min="1">
+                </div>
+      
+                <div class="mb-3 col-sm-6">
+                  <label for="Kebele">Kebele 5</label>
+                    <input type="number" class="form-control rounded-0" id="Kebele5"  name="Kebele" placeholder="birr" min="1">
+                </div>
+      
+                <div class="mb-3 col-sm-6">
+                  <label for="Kebele">Kebele 6</label>
+                    <input type="number" class="form-control rounded-0" id="Kebele6"  name="Kebele" placeholder="birr" min="1">
+                </div>
+      
+                <div class="mb-3 col-sm-6">
+                  <label for="Kebele">Kebele 7</label>
+                    <input type="number" class="form-control rounded-0" id="Kebele7"  name="Kebele" placeholder="birr" min="1">
+                </div>
+      
+                <div class="mb-3 col-sm-6">
+                  <label for="Kebele">Kebele 8</label>
+                    <input type="number" class="form-control rounded-0" id="Kebele8"  name="Kebele" placeholder="birr" min="1">
+                </div>
+      
+                <div class="mb-3">
+                  <label for="Kebele">Kebele 9</label>
+                    <input type="number" class="form-control rounded-0" id="Kebele9"  name="Kebele" placeholder="birr" min="1">
+                </div>
+      
+                <hr class="mb-4">
+      
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="save-info" name="term" value="yes" required>
+                <label class="custom-control-label" for="term" >by checking this box you agree to the <a href="#"> terms and conditions</a></label>
+              </div>
+                
+             
+      
+              
+      
+              
+              <br class="mb-4">
+              <br class="mb-4">
+      
+              <button class="btn btn-outline-primary btn-sm btn-block" type="submit">Submit</button>     
+              </div>
+          </div>
+            </form>
+          </div>
+</main>
+
+  
+      
+</body>
+</html>

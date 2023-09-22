@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <!-- <style>
+    body {
+      background: linear-gradient(#1ddf47b0, rgba(68, 39, 199, 0.795));
+      /* background-color: #256D85; */
+      /* background-color: #2C3333; */
+    }
+  </style> -->
+
+</head>
+
+<body class="bg-light">
+  <header>
+    <nav id="navbar_top">
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">ZeroWaste</h4>
+              <p class="text-muted">Add some information about the album below, the author, or any other background
+                context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off
+                to some social networking sites or contact information.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li class="my-1"><img class="d-bl mx-2 " src="/img/email-logo.png" alt="" width="30" height="30"><a
+                    href="#" class="text-white">Email</a></li>
+                <li class="my-1"><img class="d-bl mx-2 " src="/img/facebook-logo.png" alt="" width="30" height="30"><a
+                    href="#" class="text-white">Facebook</a></li>
+                <li class="my-1"><img class="d-bl mx-2 " src="/img/telegram-logo.png" alt="" width="30" height="30"><a
+                    href="https://t.me/FokaKommunity" class="text-white">Telegram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
+              viewBox="0 0 24 24">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong>ZeroWaste</strong>
+          </a>
+          <ul class="navbar-nav ms-auto">
+            <form class="form-inline">
+              <a href="/login" class="btn btn-info my-2 mx-2 my-sm-0 rounded-2" type="submit">login</a>
+              <a href="/donation" class="btn btn-primary my-2 mx-2 my-sm-0 rounded-2" type="submit">Donation
+                </a>
+            </form>
+            <!-- <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li> -->
+          </ul>
+          <button class="navbar-toggler btn btn-outline-secondary btn-square-md rounded-0" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container my-5 col-md-10 bg-white">
+    <form action="/single" method="POST" enctype="multipart/form-data">
+      <br>
+      <div class="row md-3" style="justify-content: center;">
+        <br>
+        <div class="col-md-6 order-md-1 my-2">
+          <h4 class="mb-5">Register to provide, and be verified.</h4>
+          <form class="needs-validation" id="name" novalidate>
+            <div class="row">
+              <div class="mb-2">
+                <label class="form-label" for="validationCustomUsername">Organization Name</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">
+                      <img class="d-block mx-auto " src="/img/userIcon.png" alt="" width="30" height="30">
+                    </span>
+                  </div>
+                  <input type="text" class="form-control rounded-0" id="validationCustomUsername" id="name" name="name"
+                    placeholder="Organization name" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-2">
+                <label class="form-label" for="validationCustomUsername">Phone</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">
+                      <img class="d-block mx-auto" src="/img/phone-icon.jpg" alt="" width="30" height="30"> <span
+                        class="input-group-prepend">+251</span>
+                    </span>
+                  </div>
+
+                  <input type="tel" class="form-control rounded-0" id="validationCustomUsername" id="number"
+                    maxlength="9" name="number" placeholder="910101010" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+
+                </div>
+
+
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="validationCustomUsername">Kebele</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">
+                      <img class="d-block mx-auto" src="/img/People.jpg" alt="" width="30" height="30">
+                    </span>
+                  </div>
+                  <input type="address" class="form-control" id="validationCustomUsername" id="address" name="address"
+                    placeholder="Kebele number" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2">
+                <label for="file">Attach Organization License Here</label>
+                <div class="input-group mbs">
+                  <input type="file" name="image" id="myFile" class="form-control rounded-0" required>
+                </div>
+              </div>
+
+            </div>
+
+            <hr class="mb-2">
+
+            <div class="custom-control custom-checkbox">
+              <div class="row md-3 " style="justify-content: center;">
+                <button type="submit" class="btn btn-outline-primary btn-sm btn-block my-2 rounded-0">
+                  <span class="button__text">Register</span></button>
+              </div>
+            </div>
+            <br>
+          </form>
+
+        </div>
+
+      </div>
+  </div>
+
+  <div class="bg-white  py-3">
+    <footer class="py-3 mb-2">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="/about" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2022 Company, Inc</p>
+    </footer>
+  </div>
+  <div class="container">
+
+    <div class="modal fade popup " id="myModal" role="dialog" data-toggle="" data-target="#myModal">
+      <div class="modal-dialog ">
+      
+        <!-- Modal content-->
+        <div class="modal-content rounded-0">
+          <div class="modal-header bg-dark  rounded-0">
+            <h4 class="modal-title text-bg-dark">Order succesfull</h4>
+            <button href="/seller" type="button" class="btn btn-danger rounded-0 close" onclick="closed()" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body  rounded-0">
+            <p>YOU ARE ONE OF THE CUSTOMER WHO USED OUR SERVICES. WE ARE GLAD TO THANK YOU</p>
+            <h6>WAIT UNTIL WE PICK IT FOR YOU AND CONTACT US IF YOU HAD A PROBLEM USING</h6>
+            <h6>OUR PHONE NUMBER IS: +251982210108</h6>
+          </div>
+          <!-- <div class="modal-footer  rounded-0">
+            <a href="/seller" type="button" class="btn btn-dark rounded-0 close" onclick="closed()" data-dismiss="modal">Retry</a>
+          </div> -->
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+  $(window).on('load', function() {
+      $('#myModal').modal('show');
+      // $("#myModal").modal("hide"); 
+  });
+  function closed(){
+        const popup = document.querySelector('.popup');
+        if (popup.classList.contains("modal")){
+          $("#myModal").modal("hide"); 
+        }
+      }
+</script>
+  
+</body>
+
+
+</html>

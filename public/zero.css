@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.first-section{
+    background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0)),
+    url(../img/Ag+Training+in+Toowoomba+Ensures+Safe+Handling+of+Chemicals+on+The+Farm-1920w.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.abit-left{
+    margin: 0 60% 0 20px;
+}
+.top{
+    margin-top: 10%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.left{
+    margin-right: 30px;
+}
+.containerr{
+    /* width: 100%; */
+    margin-right: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.second{
+    background-color: rgb(226, 226, 226);
+    padding-top: 70px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+}
+
+
+
+.middle{
+    background-color: whitesmoke;
+}
+
+.yellow{
+    background-color: rgb(254, 200, 12);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60vh;
+}
+.contentt {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 60px ;
+    font-family: 'Poppins', sans-serif;
+}
+.content a{
+    margin: 0 60px;
+    padding: 0;
+}
+.liner{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+    padding: 0 10px;
+    font-size: large;
+}
+.liner::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.2s ease-in;
+}
+
+.liner:hover:after{
+    width: 100%;
+}
+.show{
+    transition: opacity 0.4s ease-in-out;
+    opacity: 1;
+    position: relative;
+}
+.hidden{
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0%;
+    position: absolute; 
+    /* display: none !important;
+     */
+}
+
+.hiddenImg{
+    transition: opacity 0.6s ease-in-out;
+    opacity: 0%;
+    position: absolute;
+    display: none;
+}
+
+.showImg{
+    transition: opacity 0.6s ease-in-out;
+    opacity: 100%;
+    position: relative;
+    display: block;
+}
+
+
+.cntr{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 20px 20px 40px 20px;
+}
+
+.card-body{
+    border: none;
+}
+.our_service {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+.border-0{
+    background-color: rgb(226, 226, 226);
+}
+.read-more{
+    margin-left: 0px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: #7DCE13;
+}
+.no-left {
+    margin-left: 0;
+}
+.discription{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.discription p {
+    display: grid;
+    align-items: center;
+    margin: 0 20px;
+}
+.our_service2{
+    text-align: center;
+}
+.get-in-touch {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+/* .card-img-top:hover{
+    transition: all .3s ease-in;
+    transform: scale(1.05);
+} */

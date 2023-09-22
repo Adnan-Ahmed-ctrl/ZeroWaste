@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>ZeroWaste</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="vesion.css" />
+  <link rel="icon" href="/HOP.png" type="image/icon type">
+  <style>
+    body {
+      /* background: linear-gradient(#1ddf47b0,rgba(68, 39, 199, 0.795)); */
+      background: linear-gradient(#E7F6F2,#E7F6F2);
+      /* background-color: #256D85; */
+      /* background-color: #2C3333; */
+      /* background-color: #3120E0; */
+    }
+
+    .hover:hover {
+      transition: all .2s ease-in-out;
+      transform: scale(1.1);
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- <div class="bg-warning py-2"> 
+     ZeroWaste
+    </div> -->
+
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">ZeroWaste</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+
+          <ul class="navbar-nav ms-auto">
+            <form class="form-inline">
+              <a href="/login" class="btn btn-outline-info my-2 mx-2 my-sm-0 rounded-0" type="submit">login</a>
+              <a href="/donation" class="btn btn-outline-primary my-2 mx-2 my-sm-0 rounded-0" type="submit">Donation Service</a>
+              <a href="/HOP" class="btn btn-outline-primary my-2 mx-2 my-sm-0 rounded-0" type="submit">Donate</a>
+            </form>
+            <!-- <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li> -->
+          </ul>
+        </div> <!-- navbar-collapse.// -->
+      </div> <!-- container-fluid.// -->
+    </nav>
+  </header>
+  <button class="btn btn-primary" type="button" disabled>
+    <span class="spinner-border spinner-border-" role="status" aria-hidden="true"></span>
+    <span class="sr-only"></span>
+  </button>
+  <div class="container">
+    <div class="first_section">
+      <br /><br /><br />
+      <div class="p-4 p-md-5 mb-5 rounded text-bg-none abit_left">
+        <div class="col-md-5 px-0 ">
+          <h1 class="display-4 fst-italic fw-bold mx-5">Zero Waste</h1>
+          <!-- <p class="lead my-3 fw-normal">
+            Multiple lines of text that form the lede, informing new readers
+            quickly and efficiently about what’s most interesting in this post’s
+            contents. Multiple lines of text that form the lede, informing new
+            readers quickly and efficiently about what’s most interesting in
+            this post’s contents.
+          </p> -->
+          <div class="my-5 mx-3">
+            <a href="/provide" type="button" class="btn btn-primary rounded-0">
+              Provide
+            </a>
+
+            <a href="/display" type="button" class="btn btn-success mx-5 rounded-0">Our Service</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <hr class="featurette-divider" />
+  <div class="container marketing">
+    <!-- Three columns of text below the carousel -->
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider" />
+
+    <div class="intro-1 row featurette">
+      <div class="col-md-7 align-middle">
+        <h2 class="featurette-heading fw-bold lh-1">
+          First featurette heading.
+          <span class="text-muted">It’ll blow your mind.</span>
+        </h2>
+        <p class="lead">
+          Some great placeholder content for the first featurette here.
+          Imagine some exciting prose here. Some great placeholder content for
+          the first featurette here. Imagine some exciting prose here. Some
+          great placeholder content for the first featurette here. Imagine
+          some exciting prose here.
+        </p>
+      </div>
+      <div class="hover col-md-5" onmouseover="document.querySelector('.intro-1').style.backgroundColor = 'white'" onmouseout="document.querySelector('.intro-1').style.backgroundColor='#E7F6F2'">
+        <img src="../img/2.jpg" alt="" style="width: 500px ; height: 400px;" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <div class="intro-2 row featurette">
+      <div class="hover col-md-7 align-middle" onmouseover="document.querySelector('.intro-2').style.backgroundColor = 'white'" onmouseout="document.querySelector('.intro-2').style.backgroundColor = '#E7F6F2'">
+        <img src="../img/3.jpg" alt="" style="width: 500px ; height: 400px;" />
+      </div>
+      <div class="col-md-5">
+        <h2 class="featurette-heading fw-bold lh-1">
+          First featurette heading.
+          <span class="text-muted">It’ll blow your mind.</span>
+        </h2>
+        <p class="lead">
+          Some great placeholder content for the first featurette here.
+          Imagine some exciting prose here. Some great placeholder content for
+          the first featurette here. Imagine some exciting prose here. Some
+          great placeholder content for the first featurette here. Imagine
+          some exciting prose here.
+        </p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <div class="intro-3 row featurette">
+      <div class="col-md-7 align-middle">
+        <h2 class="featurette-heading fw-bold lh-1">
+          First featurette heading.
+          <span class="text-muted">It’ll blow your mind.</span>
+        </h2>
+        <p class="lead">
+          Some great placeholder content for the first featurette here.
+          Imagine some exciting prose here. Some great placeholder content for
+          the first featurette here. Imagine some exciting prose here. Some
+          great placeholder content for the first featurette here. Imagine
+          some exciting prose here.
+        </p>
+      </div>
+      <div class="hover col-md-5" onmouseover="document.querySelector('.intro-3').style.backgroundColor = 'white'" onmouseout="document.querySelector('.intro-3').style.backgroundColor = '#E7F6F2'">
+        <img src="../img/1.jpg" alt="" style="width: 500px ; height: 400px;" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    
+   
+
+    <!-- /END THE FEATURETTES -->
+  </div>
+  <!-- /.container -->
+  <!-- <hr class="featurette-divider" /> -->
+
+  <div class="container">
+    <section class="middle">
+      <div class="yellow">
+        <div class="content vision">
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam!
+          </h2>
+          <h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia,
+            perferendis.
+          </h2>
+        </div>
+
+        <nav class="content">
+          <a class="a" onclick="Values()">Values</a>
+          <a class="a" onclick="Vision()">Vision</a>
+          <a class="a" onclick="Mission()">Mission</a>
+        </nav>
+      </div>
+      <div class="discription">
+        <div class="Values">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nulla
+          omnis doloribus vitae nostrum eum temporibus unde dolor at molestiae?
+          Eos consequuntur dolore explicabo doloremque, quibusdam ratione
+          molestiae corporis commodi!
+        </div>
+        <div class="Vision hidden">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          dolores dignissimos blanditiis neque, reiciendis temporibus fuga,
+          doloremque dolor vero optio quas recusandae impedit laboriosam
+          laudantium? Animi deserunt deleniti doloremque facilis nulla esse.
+          Dicta id fugiat neque quod dolorum labore earum ex autem, atque
+          dignissimos eius doloribus esse! Reiciendis, possimus quis.
+        </div>
+        <div class="Mission hidden">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit corrupti
+          iure dolorem beatae vero repudiandae veniam accusantium ad libero
+          quibusdam nesciunt officia veritatis, inventore aliquid provident
+          quidem nulla aut eligendi. Numquam explicabo id blanditiis, neque
+          sequi nulla! Ipsam, quidem mollitia error veniam quam sint iste sit
+          molestias illo quaerat doloremque. Nisi iure, quibusdam distinctio
+          omnis quo laboriosam ratione, vitae aspernatur necessitatibus sapiente
+          iste qui voluptatibus asperiores fuga. Ullam labore quidem optio porro
+          illum, iusto ipsam repudiandae harum blanditiis beatae inventore!
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <div class="pricing-header p-3 pb-md-4 mx-auto">
+      <h1 class="display-5 fw-normal">About Us</h1>
+    </div>
+    <br /><br /><br />
+    <div class="row">
+      <div class="col-lg-5 ">
+        <img src="../img/Adnan.jpg" alt="" class="hover rounded-circle" />
+        <h2 class="fw-normal">Adnan Ahmed Ibrahim</h2>
+        <p>
+          Some representative placeholder content for the three columns of
+          text below the carousel. This is the first column. Some
+          representative placeholder content for the three columns of text
+          below the carousel. This is the first column. Some representative
+          placeholder content for the three columns of text below the
+          carousel. This is the first column.
+        </p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- /.col-lg-4 -->
+      <div class="col-lg-6 mx-3">
+        <img src="../img/Adnan2.jpg" alt="" class="hover rounded-circle" />
+        <h2 class="fw-normal">Adnan Ahmed Abdu</h2>
+        <p>
+          Another exciting bit of representative placeholder content. This
+          time, we've moved on to the second column. Another exciting bit of
+          representative placeholder content. This time, we've moved on to the
+          second column. Another exciting bit of representative placeholder
+          content. This time, we've moved on to the second column.
+        </p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div>
+      <!-- /.col-lg-6 -->
+    </div>
+    <!-- /.row -->
+  </div>
+
+  <br /><br /><br /><br />
+
+  <!-- Footer -->
+  <hr class="featurette-divider" />
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-4 col-md-3 mb-3 mx-5">
+          <h5>ZeroWaste</h5>
+        </div>
+
+        <div class="col-4 col-md-2 mb-3">
+          <ul class="nav flex-column ">
+            <li class="nav-item mb-2">
+              <a href="/" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="/about" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-5 mb-3 mx-auto">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <!-- <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address" /> -->
+              <button class="btn btn-primary" type="button">Contact us</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 mx-autos border-top">
+        <p class="mx-auto">&copy; 2022 ZeroWaste, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter" />
+              </svg></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram" />
+              </svg></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook" />
+              </svg></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) {
+          document.getElementById('navbar_top').classList.add('fixed-top');
+          // add padding top to show content behind navbar
+          navbar_height = document.querySelector('.navbar').offsetHeight;
+          document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+          document.getElementById('navbar_top').classList.remove('fixed-top');
+          // remove padding top from body
+          document.body.style.paddingTop = '0';
+        }
+      });
+    });
+
+  </script>
+  <script src="vesion.js"></script>
+
+</body>
+
+</html>
