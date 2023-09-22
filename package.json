@@ -208,7 +208,7 @@
     "yallist": "^4.0.0"
   },
   "scripts": {
-    "start": "nodemon app5.js",
+    "start": "node app5.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "nodemon app5.js"
   },
