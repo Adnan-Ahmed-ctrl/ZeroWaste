@@ -209,6 +209,7 @@
   },
   "scripts": {
     "start": "node app5.js",
+    "dev": "env-cmd node --watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node app5.js"
   },
