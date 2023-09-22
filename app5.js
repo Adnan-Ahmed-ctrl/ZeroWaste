@@ -9,7 +9,7 @@ const port = process.env.PORT || 5000;
 
 const multer = require("multer");
 const { google } = require("googleapis");
-const authRoutes = require('../ZeroWaste/Zroutes/routes')
+const authRoutes = require('./Zroutes/routes')
 const fs = require("fs");
 const { uptime } = require("process");
 const path = require("path");
