@@ -17,7 +17,6 @@ const axios = require("axios");
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-
 app.use(express.static("public"));
 app.use(cookiePraser());
 app.use(express.json())
